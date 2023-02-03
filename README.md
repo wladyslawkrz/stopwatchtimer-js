@@ -1,2 +1,2 @@
 # stopwatchtimer-js
-https://wladyslawkrz.github.io/
+https://wladyslawkrz.github.io/stopwatchtimer-js/
