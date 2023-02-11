@@ -43,3 +43,4 @@ function add() {
     (seconds > 9 ? seconds : "0" + seconds);
   timeout = setTimeout(add, 1000);
 }
+
