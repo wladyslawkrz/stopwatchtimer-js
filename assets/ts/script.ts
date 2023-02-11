@@ -1,13 +1,12 @@
-// const timer = document.getElementById('time');
-const startTimer = document.getElementById("startStopwatch");
-const stopTimer = document.getElementById("stopStopwatch");
-const resetTimer = document.getElementById("resetStopwatch");
-const timerBlock = document.getElementById("timerBlock");
+const startTimer: HTMLElement = document.getElementById("startStopwatch")!;
+const stopTimer: HTMLElement = document.getElementById("stopStopwatch")!;
+const resetTimer: HTMLElement = document.getElementById("resetStopwatch")!;
+const timerBlock: HTMLElement = document.getElementById("timerBlock")!;
 
-let seconds = 0;
-let minutes = 0;
-let hours = 0;
-let timeout;
+let seconds: number = 0;
+let minutes: number = 0;
+let hours: number = 0;
+let timeout: number;
 
 startTimer.onclick = function () {
   add();
@@ -44,3 +43,4 @@ function add() {
     (seconds > 9 ? seconds : "0" + seconds);
   timeout = setTimeout(add, 1000);
 }
+
